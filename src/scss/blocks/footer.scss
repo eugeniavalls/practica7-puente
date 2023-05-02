@@ -1,1 +1,19 @@
-/* ESTILOS DEL FOOTER */
+@use '../mixins/responsive.scss' as *;
+
+.footer{
+    padding: 50px;
+    padding-top: 0;
+    font-size: 16px;
+    color: var(--secundary-text-color);
+
+    @include responsive(tablet){
+        padding-left: 245px;
+        padding-right: 245px;
+    }
+
+    @include responsive(desktop){
+        padding-left: 165px;
+        padding-right: 165px;
+        text-align: center;
+    }
+}
